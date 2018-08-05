@@ -2,7 +2,9 @@
 Important Notes
 
 Made as a part of Udacity's Intro to Programming Nanodegree (IPND).
-Uses starter code provided by Udacity to assist with HTML, CSS, and shuffle function
+Uses starter code provided by Udacity to assist with HTML, CSS, and shuffle function.
+
+Resources 
 Modal HTML and CSS code referenced from https://www.w3schools.com/howto/howto_css_modals.asp
 
 How To Play
