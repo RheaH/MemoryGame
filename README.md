@@ -1,7 +1,7 @@
 # MemoryGame
 Important Notes
 
-Made as a part of Udacity's Intro to Programming Nanodegree (IPND).
+Made as a part of Udacity's Front End Development Nanodegree (FEND).
 Uses starter code provided by Udacity to assist with HTML, CSS, and shuffle function.
 
 Resources 
