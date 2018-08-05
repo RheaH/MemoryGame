@@ -10,6 +10,6 @@ The game starts automatically upon page load. Click the cards to reveal them. Th
 
 Scoring
 
-3 stars = 14 moves or less
-2 stars = 19 moves or less
+3 stars = 15 moves or less
+2 stars = 20 moves or less
 1 star = 20 moves or more
