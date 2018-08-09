@@ -1,38 +1,39 @@
-const deck = [
+let deck = [
     "fa fa-diamond",
-    "fa fa-bluetooth",
+    "fa fa-diamond",
     "fa fa-btc",
-    "fa fa-bolt",
+    "fa fa-btc",
     "fa fa-cube",
-    "fa fa-btc",
+    "fa fa-cube",
     "fa fa-leaf",
+    "fa fa-leaf",
+    "fa fa-bomb",
+    "fa fa-bomb",
     "fa fa-chrome",
-    "fa fa-diamond",
-    "fa fa-bomb",
-    "fa fa-leaf",
-    "fa fa-bomb",
+    "fa fa-chrome",
     "fa fa-bolt",
-    "fa fa-chrome",
+    "fa fa-bolt",
     "fa fa-bluetooth",
-    "fa fa-cube"
+    "fa fa-bluetooth"
 ];
 
 let open = [];
 let matched = 0;
 let moveCounter = 0;
 let numStars = 3;
-let hard = 15;
-let medium = 20;
 let seconds = 0;
 let minutes = 0;
 let clearTime = -1;
+let hard = 15;
+let medium = 20;
+
 let modal = $("#win-modal");
 
 //Start time first card is clicked
 
 //Start timer
 let startTimer = function() {
-  if (seconds === 60) {
+  if (seconds === 59) {
     minutes++;
     seconds = 0;
   } else {
@@ -63,7 +64,7 @@ function resetTimer() {
 // Randomizes cards on board and updates card HTML
 function updateCards() {
   deck = shuffle(deck);
-  let index = 0;
+  var index = 0;
   $.each($(".card i"), function() {
     $(this).attr("class", "fa " + deck[index]);
     index++;
@@ -197,7 +198,7 @@ let playAgain = function() {
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
-  let currentIndex = array.length,
+  var currentIndex = array.length,
     temporaryValue,
     randomIndex;
 
@@ -220,3 +221,7 @@ $(".play-again").click(playAgain);
 
 // Provides a randomized game board on page load
 $(updateCards);
+ 
+ 
+
+  
