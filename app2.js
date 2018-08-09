@@ -28,9 +28,6 @@ let hard = 15;
 let medium = 20;
 
 let modal = $("#win-modal");
-// Difficulty settings (max number of moves for each star)
-
-
 //Start time first card is clicked
 
 //Start timer
