@@ -39,7 +39,7 @@ let startTimer = function() {
     seconds++;
   }
 
-  // Ensure that single digit seconds are preceded with a 0
+  // setting timer format
   let timerFormat = "0";
   if (seconds < 10) {
     timerFormat += seconds;
@@ -60,7 +60,7 @@ function resetTimer() {
   clearTime = setInterval(startTimer, 1000);
 }
 
-// Randomizes cards on board and updates card HTML
+// Shuffle cards on board and updates card HTML
 function updateCards() {
   deck = shuffle(deck);
   var index = 0;
@@ -167,7 +167,7 @@ let resetGame = function() {
   resetStars();
 };
 
-// Handles primary game logic of game
+// Handles  game logic 
 let onClick = function() {
   if(seconds == 0 && minutes == 0){
     resetTimer();
